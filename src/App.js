@@ -66,10 +66,10 @@ function App() {
 
               </div>
             </Route>
-            <Route path="/request">
+            <Route exact path="/request">
               <ApplyForBlood />
             </Route>
-            <Route path="/donar">
+            <Route exact path="/donar">
               <div style={Cardin}>
                 {
                   donar.map(({ Name, Mobile, Location, BloodGroup }) => (
@@ -83,7 +83,7 @@ function App() {
                 }
               </div>
             </Route>
-            <Route path="/register">
+            <Route exact path="/register">
               <Register />
             </Route>
           </Switch>
